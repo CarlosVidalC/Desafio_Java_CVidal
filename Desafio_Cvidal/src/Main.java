@@ -5,6 +5,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.print("Ingrese nombre: ");
         String nombre = scanner.nextLine();
 
@@ -13,6 +14,10 @@ public class Main {
 
         System.out.print("Ingrese edad: ");
         int edad = scanner.nextInt();
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Procesando estudiante " + i);
+        }
 
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
